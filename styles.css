@@ -1,0 +1,69 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('OIP\ \(1\).jpeg'); /* شعار نقابة المهندسين */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* خلفية شبه شفافة */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية شبه شفافة */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
