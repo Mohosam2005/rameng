@@ -1,4 +1,4 @@
-import { supabase } from './supabase.js';
+import { supabase } from './js/supabase.js';
 
 document.getElementById('upload-form').addEventListener('submit', async function (e) {
     e.preventDefault();
