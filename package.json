@@ -1,0 +1,23 @@
+{
+  "name": "rameng",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohosam2005/rameng.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohosam2005/rameng/issues"
+  },
+  "homepage": "https://github.com/Mohosam2005/rameng#readme",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1"
+  }
+}
