@@ -5,10 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mohosam2005/rameng.git"
-  },
+  "repository": "git+https://github.com/Mohosam2005/rameng.git",
   "keywords": [],
   "author": "",
   "license": "ISC",
