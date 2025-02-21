@@ -1,6 +1,5 @@
-import { supabase } from './supabase.js';
+import { supabase } from 'supabase.js';
 
-// رفع الملفات
 document.getElementById('upload-form').addEventListener('submit', async function (e) {
     e.preventDefault();
 
@@ -8,10 +7,10 @@ document.getElementById('upload-form').addEventListener('submit', async function
     const file = fileInput.files[0];
 
     if (file) {
-        const filePath = `projects/${file.name}`;
+        const filePath = `engrami/${file.name}`;
 
         const { data, error } = await supabase.storage
-            .from('projects')
+            .from('engrami')
             .upload(filePath, file);
 
         if (error) {
@@ -20,7 +19,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
         } else {
             console.log('File uploaded successfully:', data);
             const { data: urlData } = supabase.storage
-                .from('projects')
+                .from('engrami')
                 .getPublicUrl(filePath);
             displayProject(file.name, urlData.publicUrl);
             alert('تم رفع الملف بنجاح!');
@@ -30,7 +29,6 @@ document.getElementById('upload-form').addEventListener('submit', async function
     }
 });
 
-// عرض المشاريع
 function displayProject(name, url) {
     const projectsList = document.getElementById('projects-list');
     const projectItem = document.createElement('div');
