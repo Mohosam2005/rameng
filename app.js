@@ -1,4 +1,6 @@
-import { supabase } from 'supabase.js';
+import { supabase } from './supabase.js';
+
+// الكود الخاص برفع الملفات وعرضها
 
 document.getElementById('upload-form').addEventListener('submit', async function (e) {
     e.preventDefault();
